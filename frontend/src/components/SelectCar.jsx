@@ -65,8 +65,6 @@ const SelectCar = ({ brand, logo, carImage, accent, onSelect }) => {
           </button>
         </div>
       </div>
-
-
       {isHovered && (
         <div className="absolute -inset-0.5 bg-gradient-to-r from-transparent via-gray-100 to-transparent 
           rounded-2xl blur-sm opacity-50 -z-10"></div>
