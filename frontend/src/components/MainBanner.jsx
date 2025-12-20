@@ -36,7 +36,7 @@ const MainBanner = () => {
           text-white font-medium
           transition duration-300
         ">
-          Book a Service
+          Book Emergency Service
         </button>
 
       </div>

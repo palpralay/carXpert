@@ -1,7 +1,6 @@
 import Navbar from "./common/Navbar";
 import { Routes, Route } from "react-router-dom";
-import MainBanner from "./components/MainBanner";
-import SelectCarImageLogo from "./pages/SelectCarImageLogo";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
@@ -9,8 +8,7 @@ const App = () => {
       <Navbar />
       <main className="flex-1 p-0">
         <Routes>
-          <Route path="/" element={<MainBanner />} />
-          <Route path="/select-car" element={<SelectCarImageLogo />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </main>
     </div>
