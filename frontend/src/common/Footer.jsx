@@ -49,7 +49,7 @@ const Footer = () => {
           <div>
             <h2 className="text-white font-semibold mb-4">Get in Touch</h2>
             <div className="space-y-2 text-sm">
-              <p>📞 +91 98765 43210</p>
+              <p>📞 +91 12345 12345</p>
               <p>📧 support@carxpert.com</p>
               <p>📍 India</p>
             </div>

@@ -59,8 +59,8 @@ const SelectCarImageLogo = () => {
 
         <div className="flex justify-center mt-14 ">
           <Link to="/all-cars">
-            <button className="px-6 py-3 cursor-pointer bg-gray-500 flex justify-center items-center text-white rounded-lg overflow-hidden relative group">
-              <div className="flex items-center justify-center gap-2">
+            <button className="px-6 py-3 cursor-pointer bg-gray-500 flex justify-center items-center text-white rounded-lg overflow-hidden relative group mb-16">
+              <div className="flex items-center justify-center gap-2 ">
                 <span>Show Available Cars</span>
                 <svg
                   className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-500"

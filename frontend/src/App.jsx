@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Allcars from "./pages/Allcars";
 import Footer from "./common/Footer";
 import ScrollToTop from "./common/ScrollToTop";
+import AllService from "./pages/AllService";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/all-cars" element={<Allcars />} />
+          <Route path="/all-services" element={<AllService />} />
         </Routes>
       </main>
       <Footer />
