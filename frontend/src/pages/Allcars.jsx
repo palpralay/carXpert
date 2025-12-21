@@ -96,7 +96,7 @@ const Allcars = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 mt-10 pt-10 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 mt-10 mb-10 pt-10 px-4">
       {/* Premium Header */}
       <div className="max-w-6xl mx-auto text-center mb-16">
         <div className="inline-block"></div>
