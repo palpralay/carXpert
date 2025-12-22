@@ -60,6 +60,12 @@ const Allcars = () => {
       accent: "border-gray-800",
     },
     {
+      brand: "Honda",
+      logo: "/images/hondaLogo.png",
+      carImage: "/images/hondaCar.png",
+      accent: "border-gray-800",
+    },
+    {
       brand: "Kia",
       logo: "/images/kiaLogo.png",
       carImage: "/images/kiaCar.png",
