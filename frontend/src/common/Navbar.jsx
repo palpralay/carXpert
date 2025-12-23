@@ -77,7 +77,7 @@ const Navbar = () => {
             aria-label="Open Menu"
           >
             <svg
-              className={`h-6 w-6 ${isScrolled ? "text-black" : "text-white"}`}
+              className={`h-6 w-6 ${isScrolled ? "text-black" : "text-white"} cursor-pointer`}
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -104,7 +104,7 @@ const Navbar = () => {
           aria-label="Close Menu"
         >
           <svg
-            className="h-6 w-6 text-gray-800"
+            className="h-6 w-6 text-gray-800 cursor-pointer"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
