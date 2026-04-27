@@ -30,12 +30,12 @@ const SelectCarImageLogo = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 pt-10 px-4">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-blue-50 pt-10 px-4">
       {/* Premium Header */}
       <div className="max-w-6xl mx-auto text-center mb-16">
         <div className="inline-block"></div>
         <h1 className="text-5xl font-light text-gray-900 mb-4 tracking-tight">
-          Select Your <span className="font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">Car Brand</span>
+          Select Your <span className="font-bold bg-linear-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">Car Brand</span>
         </h1>
         <p className="text-gray-600 text-lg max-w-xl mx-auto">
           Premium repair services tailored to your vehicle
@@ -77,7 +77,7 @@ const SelectCarImageLogo = () => {
                   />
                 </svg>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-red-600/0 via-red-600/10 to-red-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-red-600/0 via-red-600/10 to-red-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
             </button>
           </Link>
         </div>

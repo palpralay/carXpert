@@ -108,7 +108,7 @@ const Allcars = () => {
         <div className="inline-block"></div>
         <h1 className="text-5xl font-light text-gray-900 mb-4 tracking-tight">
           Select Your{" "}
-          <span className="font-bold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+          <span className="font-bold bg-linear-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
             Car Brand
           </span>
         </h1>

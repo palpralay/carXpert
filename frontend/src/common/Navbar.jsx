@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import LoginModal from "../components/auth/LoginModal";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/all-services" },
@@ -11,12 +13,25 @@ const Navbar = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const openLoginModal = () => {
+    setIsLoginModalOpen(true);
+  };
+
+  const closeLoginModal = () => {
+    setIsLoginModalOpen(false);
+  };
+
+  const handleAuthenticated = (redirectPath) => {
+    navigate(redirectPath);
+  };
 
   return (
     <>
@@ -57,8 +72,9 @@ const Navbar = () => {
 
           {/* DESKTOP RIGHT */}
           <div className="hidden md:block">
-            <Link
-              to="/login"
+            <button
+              type="button"
+              onClick={openLoginModal}
               className={`px-7 py-2.5 rounded-full font-medium transition
               ${
                 isScrolled
@@ -67,7 +83,7 @@ const Navbar = () => {
               }`}
             >
               Login
-            </Link>
+            </button>
           </div>
 
           {/* MOBILE MENU BUTTON */}
@@ -137,13 +153,20 @@ const Navbar = () => {
           Emergency Help
         </Link>
 
-        <Link
-          to="/login"
+        <button
+          type="button"
+          onClick={openLoginModal}
           className="bg-black hover:bg-gray-900 text-white px-8 py-2.5 rounded-full"
         >
           Login
-        </Link>
+        </button>
       </div>
+
+      <LoginModal
+        isOpen={isLoginModalOpen}
+        onClose={closeLoginModal}
+        onAuthenticated={handleAuthenticated}
+      />
     </>
   );
 };
